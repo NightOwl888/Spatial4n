@@ -33,5 +33,9 @@
     <DefineConstants>$(DefineConstants);FEATURE_SERIALIZABLE</DefineConstants>
     <DebugType>full</DebugType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Spatial4n.Tests" />
+  </ItemGroup>
   
 </Project>
