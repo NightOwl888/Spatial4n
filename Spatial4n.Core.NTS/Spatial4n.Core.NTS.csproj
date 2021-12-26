@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="$(SolutionDir)build/nuget.props" />
+
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net40;net35</TargetFrameworks>
 
     <AssemblyTitle>Spatial4n.Core.NTS</AssemblyTitle>
     <Description>A Geospatial Library for .NET - port of Spatial4j. Spatial4n extensions for NetTopologySuite.</Description>
-    <PackageTags>Lucene Lucene.net spatial geospatial geo spatial4j search</PackageTags>
-    <IsPackable>true</IsPackable>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     <NoWarn>1591</NoWarn>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
@@ -15,10 +15,6 @@
   </PropertyGroup>
 
   <Import Project="$(SolutionDir)build/dependencies.props" />
-
-  <ItemGroup>
-    <None Include="..\LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
-  </ItemGroup>
 
   <PropertyGroup>
     <DefineConstants>$(DefineConstants);FEATURE_NTS</DefineConstants>
