@@ -67,4 +67,11 @@
     <CopyrightYearRange Condition=" '$(BeginCopyrightYear)' == '$(CurrentYear)' ">$(CurrentYear)</CopyrightYearRange>
     <Copyright>Copyright © $(CopyrightYearRange) spatial4j and Itamar Syn-Hershko</Copyright>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nerdbank.GitVersioning">
+      <Version>$(NerdBankGitVersioningPackageReferenceVersion)</Version>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
 </Project>
